@@ -54,6 +54,7 @@ header nav .right p:hover {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -66,8 +67,6 @@ header nav .right p:hover {
 }
 
 .animes {
-    padding: 0px 4%;
-    padding-bottom: 5%;
     display: flex;
 }
 
