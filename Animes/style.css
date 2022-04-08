@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --color: #d1bdff;/*On crée une variable pour ne pas répeter*/
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin:0;   
+    color: white;
+}
+
+header {
+    background: linear-gradient(#13181d, #371b47 );
+}
+
+.episodes {
+    margin: 0;
+    background-color: #13181d;
+}
+
+header nav {
+    padding: 30px 4% 30px 4%;
+    display: flex;
+    flex-wrap: wrap; /* Passer à la ligne si plus de place */
+    justify-content: space-between; /* Espacez les items */
+    align-items: center;
+    background-color: #411f55;
+}
+
+header nav h1 {
+    margin: 0;/*On supprime les marges par défauts*/
+    text-transform: uppercase;/*Majuscules*/
+    font-size: 30px; 
+    color: var(--color);
+
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p {
+    margin: 0 20px 0 0;
+    color: #ccc;
+}
+
+header nav .right p:hover {
+    color: white;
+}
+
+.voiranime, .synopsis, .episodes{
+    padding: 30px 4%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    justify-content: space-between;
+}
+
+.voiranime h1, .synopsis h1{
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 200%;
+    width: 80%;
+    color: var(--color);
+}
+
+.voiranime .infos-anime {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 0 0;
+}
+
+.infos-anime .img-anime img{
+    max-width: 250px;
+    max-height: 400px;
+    transition: 0.5s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.568);
+}
+
+.infos-anime .infos {
+    margin-left: 10%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infos p {
+    margin-left: 60px;
+    align-items: center;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.infos-anime:hover p{
+    overflow: visible;
+}
+
+.infos h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.synopsis p {
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.synopsis .content-syno button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    background-color: #8b5cfa; 
+    border: 2px solid #8b5cfa;
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+
+.synopsis .content-syno button:hover {
+    background-color: inherit;
+    border: 2px solid #8b5cfa;
+    color: #8b5cfa;
+}
+
+.synopsis .content-syno #afficher:focus ~ p{
+    overflow: visible;  
+    white-space: normal;
+    transform: scale(0.96);
+}
+
+/*.list-episodes {
+    display: table;
+    width: 100%;
+}
+
+.list-episodes #le1 {
+    display:table-footer-group;
+}
+.list-episodes #le2 {
+    display:table-header-group;
+}
+.list-episodes #le3 {
+    display:table-row-group;
+}*/
+
+footer {
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--color);
+}
+footer p {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white;
+}
+
