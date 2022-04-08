@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --color: #d1bdff;/*On crée une variable pour ne pas répeter*/
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin:0;   
+    color: white;
+}
+
+header {
+    background: linear-gradient(#13181d, #371b47 );
+}
+
+
+header nav {
+    padding: 30px 4% 30px 4%;
+    display: flex;
+    flex-wrap: wrap; /* Passer à la ligne si plus de place */
+    justify-content: space-between; /* Espacez les items */
+    align-items: center;
+    background-color: #411f55;
+}
+
+header nav h1 {
+    margin: 0;/*On supprime les marges par défauts*/
+    text-transform: uppercase;/*Majuscules*/
+    font-size: 30px; 
+    color: var(--color);
+
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p {
+    margin: 0 20px 0 0;
+    color: #ccc;
+}
+
+header nav .right p:hover {
+    color: white;
+}
+
+.voir{
+    padding: 30px 4%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    justify-content: center;
+    align-items: center;
+}
+
+.voir #title{
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 150%;
+    width: 80%;
+    color: var(--color);
+}
+
+.video-container .video{
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    border: 3px solid #ccc;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.video-container .video video {
+    width: 100%;
+}
+
+
+footer {
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--color);
+}
+footer p {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white;
+}
+

@@ -1,0 +1,5 @@
+- Accueil : barre de recherche, Genres, les animes, Utilisateurs (s'inscrire,connexion), reprendre le visionnage
+
+- Accueil Animes : Nom, Nombre d'épisodes - de saisons, Date, Synopsis
+
+- Animes : Synopsis, Lecture ou Reprendre, Liste d'épisodes
