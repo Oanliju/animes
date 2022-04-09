@@ -84,6 +84,7 @@ header nav .right p:hover {
 }
 
 
+
 footer {
     margin:0;
     background-color: black;
@@ -105,4 +106,3 @@ footer p {
 footer p:hover {
     color: white;
 }
-
