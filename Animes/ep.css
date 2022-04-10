@@ -83,7 +83,53 @@ header nav .right p:hover {
     width: 100%;
 }
 
+.select select {
+    padding: 10px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    background-color: #8b5cfa; 
+    border: 2px solid #8b5cfa;
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
+}
 
+.select select:focus {
+    background-color: inherit;
+    border: 2px solid #8b5cfa;
+    color: #8b5cfa;
+}
+
+.select select option {
+    background-color: #13181d;
+    color: #ccc;
+}
+
+.prev-next {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev-next button {
+    padding: 10px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    background-color: #8b5cfa; 
+    border: 2px solid #8b5cfa;
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+.prev-next button:hover {
+    background-color: inherit;
+    border: 2px solid #8b5cfa;
+    color: #8b5cfa;
+}
 
 footer {
     margin:0;

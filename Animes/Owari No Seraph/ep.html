@@ -19,7 +19,6 @@
             <div id="title"><h1>Owari No Seraph - Ep1</h1></div>
             <div class="select">
                 <select name="Ep" id="Ep" onchange="getSelectValue();changed()">
-                    <option select="" disabled="" id="choose">Choisir L'Episodes</option>
                     <option value="1">Ep - 1</option>
                     <option value="2">Ep - 2</option>
                     <option value="3">Ep - 3</option>
@@ -33,11 +32,19 @@
                     <option value="11">Ep - 11</option>
                     <option value="12">Ep - 12</option>
                 </select>
+                <div class="prev-next">
+                    <div class="prev">
+                        <button onclick="Prev();changed()">Précédent</button>
+                    </div>
+                    <div class="next">
+                        <button onclick="Next();changed()">Suivant</button>
+                    </div>
+                </div>
             </div>
             <div class="video-container">
                 <div class="video" id="video">
-          <video src="https://fs126.myvi.ru:8090/vv164/104/73/2189385.mp4?sig=500571a4c6e2453b19d0bb704ff2f9d3&d=1280&t=1649520885" controls="true"></video>
-          </div>
+                    <video src="https://dv46.sibnet.ru/32/97/27/3297271.mp4?st=0UxKwfkA2JV0LCiK9keeEg&e=1649596000&stor=46&noip=1" controls="true"></video>
+                </div>
             </div>
         </section>
     </header>

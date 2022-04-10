@@ -1,7 +1,20 @@
-function getSelectValue() {
-    var selectedValue = document.getElementById("Ep").value;
-    console.log(selectedValue)
+var CurrentEpisode = document.getElementById("Ep").value;
+console.log(CurrentEpisode)
+
+function getSelectValue() { // actualise
+    CurrentEpisode = document.getElementById("Ep").value;
 };
+
+function Next() {
+    if (CurrentEpisode >= 1 & CurrentEpisode <=11) {
+        CurrentEpisode++;
+    }
+}
+function Prev() {
+    if (CurrentEpisode > 1 & CurrentEpisode <13) {
+        CurrentEpisode = CurrentEpisode-1;
+    }
+}
 
 var idE = {
     "Name": "Owari No Seraph",
@@ -22,9 +35,9 @@ var idE = {
 }
 var toJSON = JSON.stringify(idE);
 localStorage.setItem("idJSON", toJSON);
-
 var fromJSON = localStorage.getItem("idJSON");
 var episod = JSON.parse(fromJSON);
+
 const display = {
     elementShown: function(id, text) {
         let element = document.getElementById(id);
@@ -32,11 +45,11 @@ const display = {
     },
 
     title: function() {
-        this.elementShown("title", `<h1>Owari No Seraph - Ep${document.getElementById("Ep").value}</h1>`)
+        this.elementShown("title", `<h1>Owari No Seraph - Ep${CurrentEpisode}</h1>`)
     },
 
     episodes: function() {
-        this.elementShown("video", `<video src="${episod.Episodes[document.getElementById("Ep").value-1]}" controls="true"></video>`)
+        this.elementShown("video", `<video src="${episod.Episodes[CurrentEpisode-1]}" controls="true"></video>`)
     },
 
 }
@@ -45,4 +58,6 @@ changed = () => {
     display.title();
     display.episodes();
 }
+
+
 

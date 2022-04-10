@@ -18,11 +18,6 @@ header {
     background: linear-gradient(#13181d, #371b47 );
 }
 
-.episodes {
-    margin: 0;
-    background-color: #13181d;
-}
-
 header nav {
     padding: 30px 4% 30px 4%;
     display: flex;
@@ -148,19 +143,24 @@ header nav .right p:hover {
     transform: scale(0.96);
 }
 
-/*.list-episodes {
-    display: table;
-    width: 100%;
+.watch #Regarder {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    background-color: #8b5cfa; 
+    border: 2px solid #8b5cfa;
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
 }
-.list-episodes #le1 {
-    display:table-footer-group;
+
+.watch #Regarder:hover {
+    background-color: inherit;
+    border: 2px solid #8b5cfa;
+    color: #8b5cfa;
 }
-.list-episodes #le2 {
-    display:table-header-group;
-}
-.list-episodes #le3 {
-    display:table-row-group;
-}*/
 
 footer {
     margin:0;
