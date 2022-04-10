@@ -3,19 +3,28 @@ function getSelectValue() {
     console.log(selectedValue)
 };
 
-var idA = {
+var idE = {
     "Name": "Owari No Seraph",
     "Episodes": [
-        "https://fs126.myvi.ru:8090/vv164/104/73/2189385.mp4?sig=1b83f717c37313795bc5dd0a401551c2&d=1280&t=1649512725",
-        "https://fs126.myvi.ru:8090/vv163/104/72/2189384.mp4?sig=985b216677435578e6705c26552dc12a&d=1278&t=1649518330",
+        "https://dv46.sibnet.ru/32/97/27/3297271.mp4?st=0UxKwfkA2JV0LCiK9keeEg&e=1649596000&stor=46&noip=1",
+        "https://dv56.sibnet.ru/27/34/99/2734991.mp4?st=ZyTo5-S5eFLPa7V9vP7HRw&e=1649596000&stor=56&noip=1",
+        "https://dv56.sibnet.ru/27/34/99/2734992.mp4?st=A67JHQJ1pg9NKAscuDR2tA&e=1649596000&stor=56&noip=1",
+        "https://dv56.sibnet.ru/27/34/99/2734995.mp4?st=QKQ-lW6as-KOt6poXNO3fg&e=1649597000&stor=56&noip=1",
+        "https://dv46.sibnet.ru/32/97/27/3297272.mp4?st=W49o6fMYF8dpTeirfPGdkQ&e=1649597000&stor=46&noip=1",
+        "https://dv46.sibnet.ru/27/34/99/2734999.mp4?st=VMaKPDl9Af3HUhAv3Ekuag&e=1649597000&stor=46&noip=1",
+        "https://dv58.sibnet.ru/27/35/00/2735002.mp4?st=OB_12XzfGbxCt3VTBGDkRg&e=1649597000&stor=58&noip=1",
+        "https://dv53.sibnet.ru/27/35/00/2735003.mp4?st=fC78HoF02c54LjJFJR0rhg&e=1649597000&stor=53&noip=1",
+        "https://dv57.sibnet.ru/27/35/75/2735750.mp4?st=JCzHvp7Wfqlyjl1pqhvSCg&e=1649597000&stor=57&noip=1",
+        "https://dv46.sibnet.ru/27/35/75/2735755.mp4?st=4jFT0Y-nglIVgov-o5LTzw&e=1649598000&stor=46&noip=1",
+        "https://dv56.sibnet.ru/27/35/75/2735756.mp4?st=nMrMSCJcGuXVcrzyAm-dVA&e=1649598000&stor=56&noip=1",
+        "https://dv53.sibnet.ru/27/35/76/2735760.mp4?st=-83fmP_zNEcbgpNImqUP4g&e=1649599000&stor=53&noip=1"
     ]
 }
-var toJSON = JSON.stringify(idA);
+var toJSON = JSON.stringify(idE);
 localStorage.setItem("idJSON", toJSON);
 
 var fromJSON = localStorage.getItem("idJSON");
 var episod = JSON.parse(fromJSON);
-
 const display = {
     elementShown: function(id, text) {
         let element = document.getElementById(id);
