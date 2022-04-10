@@ -83,6 +83,11 @@ header nav .right p:hover {
     width: 100%;
 }
 
+.video-container .video iframe {
+    width: 100%;
+    height: 86%;
+}
+
 .select select {
     padding: 10px 20px;
     font-size:15px;
